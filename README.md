@@ -74,12 +74,14 @@ Using Logistic Regression, Model 4's Strategic Regressions performed better than
 <br>
 The following packages and dependicies are needed for the proper functioning of the application:
 <br>
-### **pandas**:<br>
-### **numpy**:<br>
-### **pathlib**:<br>
-### **hvplot**:<br>
-### **matplotlib.pyplot**:<br>
-### **sklearn**:<br>
+<b>
+pandas:<br>
+numpy:<br>
+pathlib:<br>
+hvplot:<br>
+matplotlib.pyplot:<br>
+sklearn:<br>
+</b>
 <br>
 
 ---
