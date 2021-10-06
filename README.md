@@ -23,23 +23,57 @@ Train a new machine learning model and compare its performance to that of a base
 
 ---
 ## RESULTS<br>
-<!---There wasn't much of a change in accuracy when I increases the hidden layers or increased the epochs value.-->
+
+Here are the results:
 <br>
-<!---The highest accuracy I could get is 73.01%
--->
-<!--
-In addition to the original method, THREE alternative methods were used:<br>-->
 
-<!---
-Alternative Method 1: 2 hidden layers & 50 epochs<br>
-Alternative Method 2: 2 hidden layers & 100 epochs<br>
-Alternative Method 3: 3 hidden layers & 100 epochs<br>
-testing 123
--->
-## Technologies
+### <U>MODEL 1</U>: 
+#### Baseline with the SMA short window of 4 & long window of 100 and DateOffset of 3 months
+<br>
+<img src="Resources/final_plot_step07_longWindow100_3.png" alt="First Model" style="height: 300px; width:450px">
+<br>
+The Strategy returns started off similar to actual returns. However, starting from middle of 2017they began performing better than actual returns.
+<br>
+<br>
 
+### <U>MODEL 2</U>: 
+#### Baseline with the SMA short window of 4 & long window of 200 and DateOffset of 3 months
+<br>
+<img src="Resources/final_plot_step07_longWindow200_3.png" alt="First Model" style="height: 300px; width:450px">
+<br>
+The Strategy returns started off performing better than actual returns, however, starting from 2nd half of 2016, they performed inferior to actual returns, with one exception of 1st half of 2020, where the performed better than actual returns.
+<br>
+<br>
+
+### <U>MODEL 3</U>: 
+#### Baseline with the SMA short window of 4 & long window of 200 and DateOffset of 24 months
+<br>
+<img src="Resources/final_plot_step07_longWindow200_24.png" alt="First Model" style="height: 300px; width:450px">
+<br>
+The Strategy returns started off performing lower than actual returns, however, starting from 1st half of 2020, they performed far better than actual returns.
+<br>
+<br>
+<b>Conclusions</b>: 
+<br>
+Model 3 seems to be the best. The strategy performs incredibly better than model 1 or model 2.
+<br>
+<br>
+
+### <U>MODEL 4</U>: 
+#### Baseline with the SMA short window of 4 & long window of 200 and DateOffset of 24 months
+<br>
+<img src="Resources/final_plot_regressionModel_model04.png" alt="First Model" style="height: 300px; width:450px">
+<br>
+<b>Conclusions</b>: 
+<br>
+Using Logistic Regression, Model 4's Strategic Regressions performed better than  Actual Returns starting starting 1st half of 2020.
+<br>
+<br>
+
+## <U>Technologies</U>: 
+<br>
 The following packages and dependicies are needed for the proper functioning of the application:
-
+<br>
 ### **pandas**:<br>
 ### **numpy**:<br>
 ### **pathlib**:<br>
